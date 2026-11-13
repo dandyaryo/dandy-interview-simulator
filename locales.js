@@ -1,5 +1,6 @@
 export const L=(id,en,ja,zh)=>({id,en,ja,zh});
 export const UI={
+ enterFullscreen:L('Layar penuh','Enter fullscreen','全画面表示','进入全屏'),exitFullscreen:L('Keluar layar penuh','Exit fullscreen','全画面表示を終了','退出全屏'),
  welcomeEyebrow:L('SEBUAH PERCAKAPAN TENTANG PERJALANAN','A CONVERSATION ABOUT THE JOURNEY','歩みを語る、ひととき','一场关于成长的对话'),
  welcomeTitle:L('Mari duduk.\nKita berbincang.','A seat at\nthe table.','席について、\n話しましょう。','请坐。\n我们聊聊。'),
  welcomeDesc:L('Kenali Dandy lewat perjalanan, cara berpikir, dan karya. Masuk ke ruangan, buka portofolionya, lalu mulai percakapan.','Meet Dandy through his journey, his thinking, and his work. Step into the room, open his portfolio, and start a conversation.','Dandyの歩み、考え方、仕事に触れてください。部屋に入り、資料を開いて、会話を始めましょう。','通过经历、思考与作品认识 Dandy。走进房间，翻开作品集，开始对话。'),

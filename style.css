@@ -4,3 +4,30 @@
 @media(max-width:520px){.welcome h1{font-size:54px;letter-spacing:-2px}.welcome-desc{max-width:280px}.welcome-brand{gap:12px}.welcome-copy{max-width:100%}.languages{gap:6px}.languages button{padding:9px 12px;font-size:10px}.welcome .primary.large{width:240px}.welcome-brand .monogram{font-size:37px}.welcome-footer{letter-spacing:1px}.book-spread{display:block;background:none;overflow:auto}.book-page{overflow:visible;padding:25px 28px}.book-page:first-child{border-bottom:1px solid #52603f33}.book-page .folio{font-size:55px}.book-cover-photo{height:130px}.book-page .book-rule{margin:15px 0}.book-page .page-no{display:none}.book-footer{padding:12px}.book-footer button{font-size:10px;padding:8px 11px}.panel h2{font-size:27px}.speech-controls{flex-direction:column}.presentation-cards{grid-template-columns:1fr}.speech-copy p{line-height:1.6}.room-caption{display:none}.room-brand small{max-width:140px}.scene-guide span:first-child{max-width:220px}.contract-sheet{padding:23px}.hotspot{font-size:7px}.hotspot[data-object=talk]{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}@media print{#room,.grain,.vignette,#welcome,#hud,#speech,.panel-header,.panel-shade{display:none!important}html,body{overflow:visible;background:white}.panel{position:static;width:100%;height:auto;overflow:visible;border:0;background:white}.panel-body{overflow:visible;padding:0}.readable-cv{background:white}.button-row{display:none}}
 .primary.large span:last-child{font-size:0;width:14px;height:14px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;position:relative;display:block;margin:0 3px}.primary.large span:last-child:after{content:'';width:18px;height:1.5px;background:currentColor;position:absolute;right:-2px;top:5px;transform:rotate(-45deg)}
+
+/* Fit the entry screen to short browser windows and mobile browser chrome. */
+#experience{height:var(--app-height,100dvh)}
+.welcome{height:100%;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding:clamp(18px,3.2dvh,36px) 5.3vw;gap:clamp(10px,2dvh,22px);scrollbar-width:thin;scrollbar-color:#74806a transparent}
+.welcome-brand,.welcome-footer{flex-shrink:0}
+.welcome-copy{flex:0 0 auto;margin-block:auto;max-width:660px;width:100%;padding:clamp(8px,1.6dvh,18px) 0}
+.welcome h1{font-size:clamp(42px,min(6.2vw,10dvh),86px);letter-spacing:-2px;line-height:1.04;margin-bottom:clamp(14px,2.3dvh,22px)}
+.welcome-copy>.eyebrow{margin-bottom:clamp(12px,2dvh,18px)}
+.welcome-desc{margin-top:0;margin-bottom:0;font-size:clamp(12px,1.6dvh,14px);line-height:1.7}
+.welcome-rule{margin:clamp(14px,2.4dvh,24px) 0}
+.language-label{margin:0 0 10px}
+.languages{margin:0 0 clamp(14px,2.2dvh,22px);flex-wrap:wrap}
+.welcome .primary.large{padding:clamp(12px,1.8dvh,18px) 22px;min-height:48px}
+.load-status{margin:10px 0 0;min-height:14px}
+.room-header{top:max(15px,env(safe-area-inset-top))}
+.dock{bottom:max(15px,env(safe-area-inset-bottom))}
+@media(max-height:650px){
+ .welcome{padding-block:18px;gap:10px}.welcome-brand .monogram{font-size:34px}.welcome-brand{font-size:9px}.welcome-brand small{font-size:7px}
+ .welcome h1{font-size:clamp(36px,min(5.8vw,9.5dvh),60px)}.welcome-copy{padding:6px 0}.welcome-copy>.eyebrow{font-size:8px;letter-spacing:2px;margin-bottom:12px}
+ .welcome-desc{font-size:12px;line-height:1.6;max-width:420px}.welcome-rule{margin:14px 0}.languages button{padding:8px 12px}.languages{margin-bottom:14px}.welcome-footer{font-size:7px}
+}
+@media(max-width:520px){
+ .welcome{padding-inline:max(22px,env(safe-area-inset-left));padding-block:max(20px,env(safe-area-inset-top));background:linear-gradient(90deg,#101a17f5,#101a17bf 70%,#101a1760)}
+ .welcome h1{font-size:clamp(36px,min(11.4vw,8.5dvh),54px);letter-spacing:-1.5px}.welcome-copy{width:100%;max-width:100%}.welcome-desc{max-width:100%;font-size:12px}.welcome-copy>.eyebrow{font-size:8px;letter-spacing:1.5px}
+ .welcome .primary.large{width:min(260px,100%)}.languages{gap:6px}.languages button{padding:9px 12px}.welcome-footer{letter-spacing:1px}
+}
+@media(max-height:460px){.welcome-rule,.welcome-footer{display:none}.welcome h1{font-size:clamp(32px,8dvh,44px);margin-bottom:12px}.welcome-desc{max-width:600px}.welcome-copy>.eyebrow{margin-bottom:8px}.welcome-copy{margin-block:0}.welcome .primary.large{min-height:44px}.language-label{margin-top:12px}.load-status{margin-top:7px}}
