@@ -1,0 +1,16 @@
+{
+  "name": "dandy-interview-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild scene-source.js --bundle --minify --format=esm --outfile=scene.js && esbuild app-source.js --bundle --external:./scene.js --minify --format=esm --outfile=app.js",
+    "check": "node --check app-source.js && node --check scene-source.js && node --check software-renderer.js && node --check locales.js && node --check content.js && node --check systems.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  }
+}

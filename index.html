@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#171d1b"><meta name="description" content="Meet Dandy Aryo Putra in an interactive first-person interview. Explore his career, capabilities and management systems."><title>Dandy — The Interview Room</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="experience" aria-label="Interview room"><canvas id="room" aria-label="Interactive 3D interview room"></canvas><div class="grain"></div><div class="vignette"></div>
+<section id="welcome" class="welcome">
+<header class="welcome-brand"><span class="monogram">da.</span><span>DANDY ARYO PUTRA<br><small>THE INTERVIEW ROOM</small></span></header>
+<div class="welcome-copy"><p class="eyebrow" data-i="welcomeEyebrow"></p><h1 data-i="welcomeTitle"></h1><p class="welcome-desc" data-i="welcomeDesc"></p><div class="welcome-rule"></div><p class="language-label" data-i="chooseLanguage"></p><div class="languages" id="languages"><button data-lang="id" lang="id">Indonesia</button><button data-lang="en" lang="en">English</button><button data-lang="ja" lang="ja">日本語</button><button data-lang="zh" lang="zh">中文</button></div><button id="start" class="primary large"><span data-i="start"></span><span aria-hidden="true">↗</span></button><p id="loadStatus" class="load-status" role="status"></p></div>
+<footer class="welcome-footer"><span>AVIATION → ENGINEERING → HSSE → OPERATIONS</span><span data-i="browserExperience"></span></footer>
+</section>
+<div id="hud" hidden><header class="room-header"><div class="room-brand"><span class="monogram">da.</span><div><b data-i="roomName"></b><small data-i="roomSubtitle"></small></div></div><div class="header-actions"><button id="sound" class="icon-button" aria-label="Suara">♪</button><button id="settings" class="icon-button" aria-label="Pengaturan">⚙</button><button id="resetView" class="icon-button" aria-label="Reset view">⌖</button><button id="fullscreen" class="icon-button" aria-label="Fullscreen">⛶</button></div></header>
+<div class="room-caption"><span class="live-dot"></span><span data-i="roomReady"></span></div>
+<div id="hotspots" class="hotspots"></div>
+<div class="scene-guide"><span data-i="lookHint"></span><span id="timeDisplay">09:41 WIB</span></div>
+<nav id="dock" class="dock" aria-label="Interview navigation"></nav>
+</div>
+<section id="speech" class="speech" hidden aria-live="polite"><div class="speech-portrait"><img src="portrait.jpg" alt="Dandy Aryo Putra"></div><div class="speech-copy"><small>DANDY ARYO PUTRA</small><p id="speechText"></p><div class="speech-progress"><i id="speechProgress"></i></div></div><div class="speech-controls"><button id="pauseSpeech" aria-label="Pause">Ⅱ</button><button id="nextSpeech" aria-label="Next">→</button><button id="closeSpeech" aria-label="Close">×</button></div></section>
+<div id="panelShade" class="panel-shade" hidden></div><section id="panel" class="panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle" hidden><header class="panel-header"><div><p class="eyebrow" id="panelEyebrow"></p><h2 id="panelTitle"></h2></div><button id="closePanel" class="close" aria-label="Close">×</button></header><div id="panelBody" class="panel-body"></div></section>
+<div id="toast" class="toast" role="status" hidden></div>
+<noscript><div class="no-js">Enable JavaScript to enter the interview room. <a href="https://wa.me/6285773700111">Contact Dandy</a></div></noscript>
+</main>
+<script src="content.js"></script><script src="systems.js"></script><script src="certificates.js"></script><script type="module" src="app.js"></script>
+</body></html>
